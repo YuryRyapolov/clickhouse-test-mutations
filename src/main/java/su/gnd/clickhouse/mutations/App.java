@@ -14,7 +14,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Class.forName("ru.yandex.clickhouse.ClickHouseDriver");
 
-        Connection con = DriverManager.getConnection("jdbc:clickhouse://172.16.2.156:8123");
+        Connection con = DriverManager.getConnection("jdbc:clickhouse://127.0.0.1:8123");
         // Подготовка таблицы
         System.out.println("Create table");
         dropTable(con);
